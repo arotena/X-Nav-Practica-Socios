@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>SOCIOS</title>
+
+<link rel="stylesheet" href="jquery-ui.css">
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery-ui.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="socios.js" type="text/javascript"></script>
+<script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+</script>
+<script>
+  function mostrar(identificador){
+    document.getElementById(identificador).style.display = "block";
+  }
+  function ocultar(identificador){
+    document.getElementById(identificador).style.display = "none";
+  }
+</script>
+</head>
+<body>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Timeline</a></li>
+    <li><a href="#tabs-2">Myline</a></li>
+  </ul>
+  <div id="tabs-1">
+    <h1>Ultimos Mensajes</h1>
+    <a id="boton" href="#"></a>
+    <div style="display:none;" id="update">
+      <p id="ultimo"></p>
+    </div>
+    <p id = "doc"></p>
+  </div>
+  <div id="tabs-2">
+    <h1>Mis Mensajes</h1>
+    <p id = "myline"></p>
+  </div>
+
+</div>
+
+</body>
+</html>

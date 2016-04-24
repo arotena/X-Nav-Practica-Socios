@@ -1,0 +1,22 @@
+
+img{
+  width: 10%;
+  height: 10%;
+
+}
+h2{
+  margin-top: -1%;
+}
+#boton{
+  color: blue;
+  text-align: center;
+}
+#leermas{
+  margin-left: 7%;
+}
+#doc div{
+  margin-left: 8%;
+}
+#update div, #myline div{
+  margin-left: 8%;
+}
