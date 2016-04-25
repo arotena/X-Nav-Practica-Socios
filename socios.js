@@ -8,7 +8,11 @@ $( document ).ready(function() {
             $( "<img>" ).attr({
               "src": mensaje.avatar,
               "align": 'left'}).appendTo( "#doc" );
-            $( "<p>" ).html(mensaje.author).appendTo( "#doc" );
+            if(key == 0){
+              $( "<span>" ).html(mensaje.author).appendTo( "#doc" );
+            }else{
+              $( "<p>" ).html(mensaje.author).appendTo( "#doc" );
+            }
             $( "<h2>" ).html(mensaje.title).appendTo( "#doc" );
             $("<input>").attr({
               'type': 'button',
@@ -38,7 +42,11 @@ $( document ).ready(function() {
           $( "<img>" ).attr({
             "src": mensaje.avatar,
             "align": 'left'}).appendTo( "#ultimo" );
-            $( "<p>" ).html(mensaje.author).appendTo( "#ultimo" );
+            if(nuevos == 0){
+              $( "<span>" ).html(mensaje.author).appendTo( "#ultimo" );
+            }else{
+              $( "<p>" ).html(mensaje.author).appendTo( "#ultimo" );
+            }
             $( "<h2>" ).html(mensaje.title).appendTo( "#ultimo" );
             $("<input>").attr({
               'type': 'button',
@@ -80,7 +88,11 @@ $( document ).ready(function() {
         $( "<img>" ).attr({
           "src": mensaje.avatar,
           "align": 'left'}).appendTo( "#myline" );
-          $( "<p>" ).html(mensaje.author).appendTo( "#myline" );
+          if(key == 0){
+            $( "<span>" ).html(mensaje.author).appendTo( "#myline" );
+          }else{
+            $( "<p>" ).html(mensaje.author).appendTo( "#myline" );
+          }
           $( "<h2>" ).html(mensaje.title).appendTo( "#myline" );
           $("<input>").attr({
             'type': 'button',

@@ -1,22 +1,30 @@
-
+body{
+  background-color: black;
+}
+#tabs-1, #tabs-2{
+  background-color: gray;
+}
 img{
-  width: 10%;
-  height: 10%;
-
+  width: 85px;
+  height: 85px;
 }
 h2{
-  margin-top: -1%;
+  margin-top: 12px;
+  margin-bottom: 0%;
 }
 #boton{
   color: blue;
   text-align: center;
 }
-#leermas{
-  margin-left: 7%;
+p{
+  margin-top: -1px;
 }
 #doc div{
   margin-left: 8%;
 }
 #update div, #myline div{
   margin-left: 8%;
+}
+span{
+  margin-bottom: 2px;
 }
